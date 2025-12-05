@@ -124,8 +124,8 @@ resource "aws_security_group" "ec2_sg" {
 
 # IAM Role
 
-resource "aws_iam_role" "ec2_role" {
-  name = "ec2_api_roles"
+resource "aws_iam_role" "ec2_role_iam" {
+  name = "ec2_api_roles_iam"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
@@ -152,8 +152,8 @@ resource "aws_iam_instance_profile" "ec2_profile" {
   role = aws_iam_role.ec2_role.name
 }
 
-resource "aws_cloudwatch_log_group" "api" {
-  name              = "/ec2/apislog"
+resource "aws_cloudwatch_log_group" "api_log" {
+  name              = "/ec2/apislog_v2"
   retention_in_days = 14
 }
 
