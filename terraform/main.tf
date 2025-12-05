@@ -125,7 +125,7 @@ resource "aws_security_group" "ec2_sg" {
 # IAM Role
 
 resource "aws_iam_role" "ec2_role" {
-  name = "ec2_api_role"
+  name = "ec2_api_roles"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
