@@ -17,16 +17,14 @@ This repository contains Terraform scripts to provision AWS infrastructure inclu
 git clone https://github.com/Rohitkumar44/infra_devops-clean
 cd infra_devops-clean/terraform
 
+2. **Terraform**
 Initialize Terraform:
 
 terraform init
 
-
-
 Plan the deployment (optional, recommended):
 
 terraform plan
-
 
 Apply the Terraform configuration:
 
@@ -39,7 +37,7 @@ terraform output alb_dns
 
 
 
-Testing Steps
+## Testing Steps
 
 Navigate to the scripts folder:
 
@@ -52,6 +50,8 @@ Run the test script:
 
 
 
+**Output**
+
 Expected output:
 
 ALB DNS printed
@@ -62,7 +62,7 @@ Response from /health endpoint
 
 
 
-Teardown Steps
+## Teardown Steps
 
 Navigate to Terraform folder:
 
@@ -79,7 +79,7 @@ Check VPCs, EC2 instances, ALB, Target Groups, IAM Roles, and CloudWatch Log Gro
 
 
 
-GitHub Actions Workflow (Optional)
+## GitHub Actions Workflow (Optional)
 
 You can automate Terraform deployments using GitHub Actions:
 
