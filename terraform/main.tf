@@ -153,7 +153,7 @@ resource "aws_iam_instance_profile" "ec2_profile" {
 }
 
 resource "aws_cloudwatch_log_group" "api" {
-  name              = "/ec2/api"
+  name              = "/ec2/apislog"
   retention_in_days = 14
 }
 
